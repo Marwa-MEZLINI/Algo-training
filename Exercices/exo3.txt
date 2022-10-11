@@ -1,0 +1,27 @@
+The Selection sort algorithm
+
+    It conciders an ascending order and sorts an array by finding the minimum element, repeatedly, from the unsorted part and putting it at the beginning.
+    The algorithm maintains two subarrays in a given array, an unsorted subbarray and the subarray which already sorted.
+
+    The time complexity of this algorithm is O(N^2) as there are two nested loops:
+    One loop to select an element of the array one by one = O(N)
+    Another loop to compare that element with every other Array element = O(N)
+
+    this algorithm may cause a problem in the the number of input is importent, it will cause the probram to be blocked for several seconds.
+
+
+The Insertion sort algorithm
+
+    It's a simple sorting algorithm that considers an ascending order.
+    Same as the selection sort agorithm, the array is virtually split into sorted and unsorted subarrays but in this algorithm, the values from the unsorted part are picked and placed at the correct position in the sorted part (same as sorting playing cards in your hands).
+
+    Its time complexity is O(N^2), it would be efficient for small data values and is appropriate if the data is already partially sorted.
+
+
+The bubble sort algorithm
+    It compares elements two by two and swaps them when they are not in the correct order.
+    For example, in a list of numbers, the bubble sorting algorithm compares the two first numbers and if it is necessary, it swaps them in an ascending order.
+
+    It always runs O(N2) time even if the array is sorted.
+    It can be optimized by stopping the algorithm if the inner loop didn’t cause any swap.
+
