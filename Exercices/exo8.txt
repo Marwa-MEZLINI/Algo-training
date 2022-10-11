@@ -1,0 +1,24 @@
+exo8
+var : A, B, m, n, rm, i, j =int
+
+begin
+A = read(INPUT) //binary number
+B = read(INPUT) //binary number
+m = len(B)
+n = len(A)
+rm = ""
+
+    For (i=n, i>0, i--)
+        For (j=m, j>0, j--)
+         if (A[i]=0 && B[j]=0)
+            A[i]+B[j]=0
+            
+         elseif ((A[i]=1 && B[j]=0)//(A[i]=0 && B[j]=1))
+            A[i]+B[j]=1
+            
+        else
+            A[i]+B[j]=0 
+            rm = 1
+        endif
+    endfor
+end
