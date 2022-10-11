@@ -1,0 +1,26 @@
+exo6
+
+var : elm[],max,min,n :int
+
+begin
+
+elm[]= read(INPUT)
+max =elm[0]
+n = len(elm[])
+
+    For (i=0, i<n, i++)
+        if (max < elm[i])
+            min = elm[0]
+            max = elm[i]  
+        endif
+    endfor
+
+    For (i=0, i<n, i++)
+        if (min > elm[i])
+            min = elm[i]  
+        endif
+    endfor
+    write(max, min)
+end
+
+- this algorithm's complexity is O(n^2).
