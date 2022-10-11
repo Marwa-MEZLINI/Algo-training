@@ -22,3 +22,5 @@ rm = ""
         endif
     endfor
 end
+
+- the complexity of this algorithm is O(n*m), it depends to the length of the binary numbers.
