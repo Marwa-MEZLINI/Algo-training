@@ -1,0 +1,14 @@
+exo 9
+var: N,n,E,i = int
+
+begin
+
+N = read(INPUT)
+n=1
+E=1
+
+    For (i=2, i<=N, i++)
+        n = n+i
+        E = E + 1/n
+    endfor
+end
