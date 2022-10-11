@@ -1,0 +1,18 @@
+exo4
+
+var: max, elm[]: int
+
+begin
+elm[] = read (INPUT)
+n = len(elm[])
+max = elm[0]
+
+    For (i=0, i<n, i++)
+        if (max < elm[i])
+            max = elm[i]
+        endif
+    endfor
+    write(max)
+end
+
+- this algorithm's complexity is O(n).
