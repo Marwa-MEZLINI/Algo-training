@@ -1,0 +1,37 @@
+exo2
+
+
+
+boolean sontInvOuOpp(a:int,b:int){
+    if (a+b=0 // a*b=1)
+        write(true)
+    else 
+        write (false)
+    endif
+}
+
+boolean existeInvOuOppConsecutifs(T = tab[]:int){
+    For (i=0, i<len(T), i++)
+        if (sontInvOuOpp(T[i],T[i+1]))
+            write (true)
+        else 
+        write (false)
+    endif    
+}
+
+boolean existeInvOuOpp(T = tab[]:int){
+    For (i=0, i<len(T), i++)
+        For (j=0, j<len(T), j++)
+            if (sontInvOuOpp(T[i],T[j]))
+            write (true)
+        else 
+        write (false)
+    endif    
+}
+
+boolean nbInvOuOpp(T = tab[]:int){
+    For (i=0, i<len(T), i++)
+        For (j=i+1, j<len(T), j++)
+            if (sontInvOuOpp(T[i],T[j]))
+            write (i,j)
+}
