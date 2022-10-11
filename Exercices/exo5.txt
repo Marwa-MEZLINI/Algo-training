@@ -1,0 +1,20 @@
+exo5
+
+var : elm[],max1,max2,n :int
+
+begin
+
+elm[]= read(INPUT)
+max1 =elm[0]
+n = len(elm[])
+
+    For (i=0, i<n, i++)
+        if (max1 < elm[i])
+            max2 = max1
+            max1 = elm[i]  
+        endif
+    endfor
+    write(max2)
+end
+
+- this algorithm's complexity is O(n).
