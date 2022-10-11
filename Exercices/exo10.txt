@@ -1,0 +1,58 @@
+exo10/part1
+var: N,n,i = int
+begin
+N = read(INPUT)
+n=1
+
+    For (i=2, i<=N, i++)
+        n = n+i
+    endfor
+    write(n)
+end
+
+exo10/part2
+var A,B=int
+begin
+A = read(INPUT)
+B = read(INPUT)
+
+    if (A ≠ 0)
+        if (B % A == 0)
+            write(True)
+        else
+            write(False)
+        endif
+    endif
+end
+
+exo10/part3
+var : A, B, Q, r =int
+begin
+
+    if (B > A && B ≠ 0)
+        Q = A / B
+        r = A % B
+    elseif (A > B && A ≠ 0)
+        Q = A / B
+        r = A % B
+    else
+        write(les nombres ne sont pas entiers)
+    endif
+end
+
+exo10/part4
+var : Voyelle[],c = char 
+i,n = int
+begin
+Voyelle =[a,e,i,o,u,y,A,E,I,O,U,Y]
+n = len(Voyelle)
+c = read(INPUT)
+
+    For (i=0, i<n, i++)
+        if c = Voyelle[i]
+            write(True)
+        else
+            write(False)
+        endif
+    endfor
+end
