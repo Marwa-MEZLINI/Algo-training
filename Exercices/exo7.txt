@@ -1,0 +1,21 @@
+exo7
+var: a, b, min, pgcd = int
+
+begin
+a = read(INPUT)
+b = read(INPUT)
+
+    if (a<b)
+        min = a
+    else
+        min = b
+    endif
+
+    For (i=1, i <= min, i++)
+        if (a%i==0 && b%i==0)
+            pgcd = i
+        endif
+    endfor
+end
+
+- this algorithm's complexity is O(min) : it depends to the smallest variable.
